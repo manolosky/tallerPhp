@@ -1,4 +1,4 @@
 tallerPhp
 =========
 
-Taller PHP
+Este directorio contiene material básico para aprender PHP
