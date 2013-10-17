@@ -1,5 +1,8 @@
 <?php
-	/**
+
+	//Preguntar por la datos recogidos por POST y redireccionar a uno de los dos archivos
+	
+	/*
 	$name=$_POST['name'];
 	$clave=$_POST['clave'];
 
@@ -24,11 +27,15 @@
 
 	//Guardar sentencia SQL en una variable, esto hace mas facil la comprension del código
 
-	$sql = "select * from = usuarios";
+	$sql = "select * from usuarios";
 	$registros = mysql_query($sql, $conexion);
 
-	while () {
-		# code...
-	}
+	//Crear un array: una variable con varios valores para almacenar todos los valores que existan
 
+	while ($fila = mysql_fetch_array($registros)) {
+		$passwords = $fila["password"]; //Recoger datos del campo "password" en esta variable
+		$nombres = $fila["nombre"]; // Recoger datos del campo "nombre" en esta variable
+		echo $nombres." - ".$passwords; //Mostrar los datos de la base de datos recogidos en las variables passwords y nombres
+		echo "<br/><br/>";
+	}
 ?>
