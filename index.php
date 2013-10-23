@@ -1,10 +1,11 @@
 <?php 
-	if(isset($_COOKIE['control'])){
-		$variableControl = $_COOKIE['control'];
-		if($variableControl == "manuel"){
-			header("Location: correcto.php");
-		}
-	}
+	//ESTA SENTENCIA ME PERMITE COMPARAR LA COOKIE DE LA CONTRASEÑA SI PREVIAVENTE HA SIDO REGISTRADA CON UN STRING BASICO*************
+	// if(isset($_COOKIE['control'])){
+	// 	$variableControl = $_COOKIE['control'];
+	// 	if($variableControl == "manuel"){
+	// 		header("Location: correcto.php");
+	// 	}
+	// }
  ?>
 <!doctype html>
 <html lang="es">

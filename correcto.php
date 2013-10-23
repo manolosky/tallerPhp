@@ -1,11 +1,9 @@
 <?php 
-
-	$variableControl = $_COOKIE['control'];
-	if($variableControl != "manuel"){
-		header("Location: error.php");
-	}
+	// $variableControl = $_COOKIE['control'];
+	// if($variableControl != "manuel"){
+	// 	header("Location: error.php");
+	// }
  ?>
-
 <!doctype html>
 <html lang="es">
 <head>
